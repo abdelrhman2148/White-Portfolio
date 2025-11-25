@@ -23,7 +23,6 @@ const Metrics: React.FC<MetricsProps> = ({ metrics, theme }) => {
   const isAccent = theme === 'accent';
 
   const strokeColor = isTerminal ? '#00ff41' : isAccent ? '#2563EB' : '#000000';
-  const fillColor = isTerminal ? '#00ff41' : isAccent ? '#2563EB' : '#000000';
 
   return (
     <section className="w-full">

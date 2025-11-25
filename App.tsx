@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { EXPERIENCE, PROJECTS, SKILLS, METRICS, CERTIFICATIONS } from './constants';
 import { Theme } from './types';
 import ThemeSwitcher from './components/ThemeSwitcher';
