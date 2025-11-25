@@ -393,7 +393,7 @@ const InfrastructureDiagram: React.FC<DiagramProps> = ({ theme, projectId }) => 
             </g>
 
             {/* Kroll DB */}
-            <DatabaseShape x={550} y={110} label="Kroll DB" />
+            <DatabaseShape x={550} y={110} label="Legacy DB" />
             
             {/* Success */}
             <g transform="translate(650, 130)">

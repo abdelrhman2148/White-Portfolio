@@ -64,7 +64,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'p1',
     title: 'Enterprise CI/CD Standardization',
-    problem: 'Inconsistent manual deployment processes across 10+ distinct projects (School of Christ, KDEC, Virtus).',
+    problem: 'Inconsistent manual deployment processes across 10+ distinct mobile and web applications.',
     solution: 'Implemented a centralized Jenkins-based automation ecosystem with standardized pipelines for iOS, Android, and Web builds.',
     result: 'Unified deployment strategy reducing failure rates and accelerating delivery cycles.',
     tech: ['Jenkins', 'Docker', 'Groovy', 'Git']
@@ -72,40 +72,40 @@ export const PROJECTS: Project[] = [
   {
     id: 'p2',
     title: 'IoT Digital Twin Infrastructure',
-    problem: 'Complex real-time synchronization required between physical assets and digital dashboards for "DigiTo" and "DXB" projects.',
+    problem: 'Complex real-time synchronization required between physical assets and digital dashboards for large-scale smart facility projects.',
     solution: 'Architected a scalable API layer ensuring seamless integration between IoT sensors and the visualization dashboard.',
     result: 'Successful deployment of high-fidelity Digital Twin systems for data centers and location monitoring.',
     tech: ['IoT API', 'Cloud', 'Real-time Data', 'Monitoring']
   },
   {
     id: 'p3',
-    title: 'Genesis Automation KPI System',
+    title: 'Internal Operations KPI System',
     problem: 'Lack of visibility into company performance metrics and manual tracking inefficiencies.',
-    solution: 'Built "GenesisAutomation", a bespoke internal tool to automate KPI tracking and company workflow reporting.',
+    solution: 'Built a bespoke internal tool to automate KPI tracking and company workflow reporting.',
     result: 'Streamlined internal operations and provided real-time data insights for leadership.',
     tech: ['Python', 'Automation', 'Internal Tools']
   },
   {
     id: 'p4',
     title: 'VR/AR Content Delivery Backend',
-    problem: 'High-latency delivery of heavy assets for VR applications (VRConnect, ARK, MCC).',
+    problem: 'High-latency delivery of heavy assets for immersive VR training and simulation applications.',
     solution: 'Optimized backend infrastructure to support Unity/Unreal builds and secure API integrations.',
     result: 'Stable, high-performance backend supporting immersive VR learning and security simulation experiences.',
     tech: ['Unity Backend', 'AWS', 'API Optimization']
   },
   {
     id: 'p5',
-    title: 'ServiceRadar Monitoring Platform',
+    title: 'Service Health Monitoring Platform',
     problem: 'Fragmented monitoring tools led to delayed incident detection and lack of uptime visibility.',
-    solution: 'Engineered "ServiceRadar", a comprehensive monitoring solution with real-time status dashboards and alerting.',
+    solution: 'Engineered a comprehensive monitoring solution with real-time status dashboards and alerting.',
     result: 'Drastically improved Mean Time to Detect (MTTD) and provided stakeholders with transparent service health data.',
     tech: ['Monitoring', 'React', 'Dashboarding', 'Alerting']
   },
   {
     id: 'p6',
-    title: 'Kroll AI Data Agent',
-    problem: 'High-volume pharmacy data entry was creating significant operational bottlenecks and data consistency issues.',
-    solution: 'Developed an intelligent AI-driven agent to automate data extraction and entry into the Kroll pharmacy system.',
+    title: 'AI Data Entry Automation',
+    problem: 'High-volume legacy data entry was creating significant operational bottlenecks and data consistency issues.',
+    solution: 'Developed an intelligent AI-driven agent to automate data extraction and entry into the target management system.',
     result: 'Eliminated manual entry bottlenecks, ensuring 100% data consistency and freeing up critical staff hours.',
     tech: ['AI/ML', 'Python', 'Automation', 'Data Engineering']
   },
@@ -119,8 +119,8 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'p8',
-    title: 'DentaQ E-Commerce Scale',
-    problem: 'Legacy systems could not support the growing inventory complexity and transaction volume for dental supplies.',
+    title: 'E-Commerce Scale Architecture',
+    problem: 'Legacy systems could not support the growing inventory complexity and transaction volume for specialized medical supplies.',
     solution: 'Architected and deployed a scalable full-stack e-commerce infrastructure with a custom inventory admin dashboard.',
     result: 'Delivered a high-availability platform supporting seamless transactions and real-time inventory management.',
     tech: ['Full-stack', 'Database Design', 'Cloud Hosting']
@@ -142,4 +142,5 @@ export const CERTIFICATIONS: Certification[] = [
   { name: 'Cisco CyberOps Associate', issuer: 'Cisco', year: 'Current' },
   { name: 'Cisco DevNet Associate', issuer: 'Cisco', year: 'Current' },
   { name: 'CompTIA Network+ (N10-007)', issuer: 'CompTIA', year: 'Current' },
+  { name: 'CompTIA Linux+', issuer: 'CompTIA', year: 'Current' },
 ];
