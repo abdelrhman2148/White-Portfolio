@@ -2,18 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Scrollbar for Terminal Feel */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #0f172a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #555;
-  border-radius: 4px;
+  background: #334155;
+  border-radius: 5px;
+  border: 2px solid #0f172a;
 }
-.terminal-scroll::-webkit-scrollbar-thumb {
+.terminal-theme ::-webkit-scrollbar-thumb {
   background: #00ff41;
   border-radius: 0;
+  border: none;
+}
+.terminal-theme ::-webkit-scrollbar-track {
+  background: #001100;
+}
+
+/* CRT / Scanline Effect for Terminal Theme */
+.scanlines {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0,0,0,0.2) 50%,
+    rgba(0,0,0,0.2)
+  );
+  background-size: 100% 4px;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  opacity: 0.15;
+}
+
+.terminal-glow {
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+
+/* Grid Background Animation */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+}
+.dark .bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+}
+.terminal-theme .bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(0, 255, 65, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
 }

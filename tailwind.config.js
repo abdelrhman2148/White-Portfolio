@@ -13,10 +13,24 @@ export default {
         mono: ['JetBrains Mono', 'monospace'],
       },
       colors: {
-        'terminal-black': '#0a0a0a',
+        'terminal-black': '#050505',
         'terminal-green': '#00ff41',
         'accent-blue': '#2563EB',
         'accent-dark': '#0F172A',
+      },
+      animation: {
+        'blink': 'blink 1s step-end infinite',
+        'typewriter': 'typewriter 2s steps(40) forwards',
+      },
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        },
+        typewriter: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        }
       }
     },
   },
