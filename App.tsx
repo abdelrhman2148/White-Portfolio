@@ -19,7 +19,6 @@ import {
   Box,
   Layers,
   Code2,
-  Phone,
   Hash,
   Activity
 } from 'lucide-react';
@@ -49,7 +48,6 @@ const Section: React.FC<{ children?: React.ReactNode; className?: string }> = ({
 
 const App = () => {
   const [theme, setTheme] = useState<Theme>('terminal'); // Default to terminal for "cool" factor
-  const [textIndex, setTextIndex] = useState(0);
   
   // Typing effect phrases
   const phrases = ["Automating Infrastructure.", "Optimizing Pipelines.", "Delivering Value."];

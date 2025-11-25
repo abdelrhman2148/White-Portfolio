@@ -1,7 +1,7 @@
 import React from 'react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, ReferenceLine } from 'recharts';
 import { Metric, Theme } from '../types';
-import { TrendingUp, TrendingDown, Activity, Cpu, Zap } from 'lucide-react';
+import { TrendingUp, TrendingDown, Activity } from 'lucide-react';
 
 interface MetricsProps {
   metrics: Metric[];
