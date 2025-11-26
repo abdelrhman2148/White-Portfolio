@@ -47,7 +47,7 @@ const Section: React.FC<{ children?: React.ReactNode; className?: string }> = ({
 };
 
 const App = () => {
-  const [theme, setTheme] = useState<Theme>('terminal'); // Default to terminal for "cool" factor
+  const [theme, setTheme] = useState<Theme>('minimal'); // Default to minimal for white version
   
   // Typing effect phrases
   const phrases = ["Automating Infrastructure.", "Optimizing Pipelines.", "Delivering Value."];
