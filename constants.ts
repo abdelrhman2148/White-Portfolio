@@ -13,7 +13,7 @@ export const EXPERIENCE: Experience[] = [
     id: '1',
     role: 'DevOps Engineer',
     company: 'Genesis Creations S.A.E.',
-    period: '04/2023 - Present',
+    period: '04/2024 - Present',
     summary: 'Driving DevSecOps adoption and automating delivery for a software house.',
     achievements: [
       'Designed and deployed CI/CD pipelines with GitHub Actions and Jenkins, tripling deployment frequency.',
